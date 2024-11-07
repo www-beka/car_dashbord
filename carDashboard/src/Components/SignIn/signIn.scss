@@ -1,0 +1,26 @@
+@import '../../index.scss';
+
+.singIn-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    margin-top: 80px;
+    .signIn-with{
+        h1{margin-bottom: 16px;}
+        p{
+            color: #7C7C8D;
+            span{ color: var(--primary-purple); }
+        }
+        button{
+            margin-top: 54px;
+            margin-right: 17px;
+            padding: 19px 35px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+    }  
+}
