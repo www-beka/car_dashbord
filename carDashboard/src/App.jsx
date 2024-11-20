@@ -10,11 +10,14 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<SideBar />}>
             <Route index element={<SignIn />} />
             <Route path="SignUp" element={<SignUp />} />
             <Route path="*" element={<NoPage />} />
-          </Route>
+
+            <Route path="SideBar" element={<SideBar />}>
+
+            </Route>
+
         </Routes>
       </BrowserRouter>
     </>
