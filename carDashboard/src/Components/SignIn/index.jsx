@@ -1,6 +1,7 @@
 import './signIn.scss'
 import Google from '../../assets/LogoGoogle.svg'
 import Facebook from '../../assets/LogoFacebook.svg'
+import { Outlet, Link } from "react-router-dom";
 
 const SignIn = () => {
     return(
@@ -8,7 +9,7 @@ const SignIn = () => {
             <div className="singIn-main">
                 <div className="signIn-with">
                     <h1>Get’s started.</h1>
-                    <p>Don’t have an account? <span>Sign up</span></p>
+                    <p>Don’t have an account? <span><Link to="/SignUp">Sign up</Link></span></p>
                     <div className="signIn-with-buttons">
                         <button>
                             <img src={Google} alt="" width={20}/> 
@@ -45,6 +46,8 @@ const SignIn = () => {
                         <button>Sign in</button>
                     </div>
             </div>   
+
+           <Outlet /> 
         </>
     )
 }
