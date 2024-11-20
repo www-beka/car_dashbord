@@ -1,5 +1,8 @@
 @import '../../index.scss';
 
+button{
+    cursor: pointer;
+}
 .singUp-main{
     width: 500px;
     margin: 50px auto;
@@ -7,7 +10,10 @@
         h1{margin-bottom: 16px;}
         p{
             color: #7C7C8D;
-            span{ color: var(--primary-purple); }
+            a{ 
+                color: var(--primary-purple); 
+                text-decoration: none;
+            }
         }
         .signIn-with-buttons{
             display: flex;   
