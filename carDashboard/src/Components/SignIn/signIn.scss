@@ -1,26 +1,111 @@
 @import '../../index.scss';
 
 .singIn-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; 
-    margin-top: 80px;
+    width: 500px;
+    margin: 50px auto;
     .signIn-with{
         h1{margin-bottom: 16px;}
         p{
             color: #7C7C8D;
             span{ color: var(--primary-purple); }
         }
+        .signIn-with-buttons{
+            display: flex;   
+            // justify-content: center;
+            align-items: center;
+            button{
+                width: 100%;
+                
+                display: flex;  
+                justify-content: center;
+                align-items: center;
+                
+                margin-top: 20px;
+                padding: 12px 0;
+
+                border: none;
+                outline: none;
+                border-radius: 10px;
+
+                img{
+                    margin-right: 12px;
+                }
+
+            }
+            button:nth-child(1){
+                margin-right: 14px;
+                background-color: #fff;
+            }
+            button:nth-child(2){
+                background-color: #4776D0;
+                color: #fff;
+            }
+
+        }
+        .lines-break{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .line{
+                width: 100%;
+                height: 1px;
+                background-color: #7C7C8D;
+            }
+            span{
+                margin: 24px 13px;
+            }
+        }
+    }  
+    .signIn-form{
+        width: 100%;
+        padding: 20px;
+        border-radius: 20px;
+        background-color: #fff;
+        form{
+            display: flex;
+            flex-direction: column;
+            input{
+                padding: 20px;
+                border: 2px solid #B1B5C3;
+                border-radius: 10px;
+                margin-bottom: 20px;
+            }
+            label{
+                margin-bottom: 12px;
+            }
+        }
+    }
+    .password{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 25px;
+        label{
+            margin-left: 13px;
+            color: #B1B5C3;
+        }
+        span{
+            color: var(--primary-purple);
+        }
+    }
+    .signIn-button{
         button{
-            margin-top: 54px;
-            margin-right: 17px;
-            padding: 19px 35px;
+            width: 100%;
+            margin-top: 30px;
+            padding: 18px 0;
 
             display: flex;
             justify-content: center;
             align-items: center;
-            
+
+            background-color: var(--primary-purple);
+            color: #fff;
+
+            border: none ;
+            outline: none;
+
+            border-radius: 10px;
         }
-    }  
+
+    }
 }

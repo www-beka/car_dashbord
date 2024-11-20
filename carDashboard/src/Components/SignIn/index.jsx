@@ -9,8 +9,16 @@ const SignIn = () => {
                 <div className="signIn-with">
                     <h1>Get’s started.</h1>
                     <p>Don’t have an account? <span>Sign up</span></p>
-                    <button><img src={Google} alt="" /> Sign in with Google</button>
-                    <button><img src={Facebook} alt="" /> Sign in with Facebook</button>
+                    <div className="signIn-with-buttons">
+                        <button>
+                            <img src={Google} alt="" width={20}/> 
+                            Sign in with Google
+                        </button>
+                        <button>
+                            <img src={Facebook} alt="" width={20} /> 
+                             Sign in with Facebook
+                        </button>
+                    </div>
                     <div className="lines-break">
                         <div className="line"></div>
                         <span>or</span>
@@ -20,11 +28,12 @@ const SignIn = () => {
                 <div className="signIn-form">
                     <form action="">
                         <label htmlFor="">Email</label>
-                        <input type="email" />
+                        <input type="email" placeholder='uistore@gmail.com' required/>
 
                         <label htmlFor="">Password</label>
-                        <input type="password" />
+                        <input type="password" placeholder='******' required/>
                     </form>
+                </div>
                     <div className="password">
                         <div>
                             <input type="checkbox" /> 
@@ -32,8 +41,9 @@ const SignIn = () => {
                         </div>
                         <span>Forgot your password?</span>
                     </div>
-                    <button>Sign in</button>
-                </div>
+                    <div className="signIn-button">
+                        <button>Sign in</button>
+                    </div>
             </div>   
         </>
     )
