@@ -4,19 +4,20 @@ import SignIn from "./Components/SignIn";
 import SignUp from "./Components/SignUp";
 import SideBar from "./Components/SideBar";
 import NoPage from "./Components/NoPage"
+import Dashboard from "./Components/Dashboard";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-            <Route index element={<SignIn />} />
+            <Route path="/" element={<SideBar />}>
+              <Route index  element={<Dashboard />} />
+            </Route>
+              {/* <Route path="Dashboard" element={<Dashboard />} /> */}
+            <Route path="SignIn" element={<SignIn />} />
             <Route path="SignUp" element={<SignUp />} />
             <Route path="*" element={<NoPage />} />
-
-            <Route path="SideBar" element={<SideBar />}>
-    
-            </Route>
 
         </Routes>
       </BrowserRouter>

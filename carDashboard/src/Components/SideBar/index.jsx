@@ -13,10 +13,8 @@ import LogOutIcon from '../../assets/logOut.svg'
 import Logo from '../../assets/logo.svg'
 import NotificationIcon from '../../assets/notification.svg'
 import ProfileIcon from '../../assets/profile.png'
-import SearchIcon from '../../assets/search.svg'
 
-
-const Layout = () => {
+const SideBar = () => {
   return (
     <>
       <div className="bars-layout">
@@ -59,23 +57,32 @@ const Layout = () => {
                   </div>
               </div>
           </div>
-    <div className="navbar">
-              <div className="search">
-                <form action="">
-                    <input type="search" placeholder="Search or type" />
-                </form>
-              </div>
-              <div className="profile">
-                <img src={NotificationIcon} alt="noti" />
-                <img src={ProfileIcon} alt="profile" />
-              </div>
+          
+         <main>
+          <div className="navbar">
+                <div className="search">
+                  <form action="">
+                      <input type="search" placeholder="Search or type" />
+                  </form>
+                </div>
+                <div className="profile">
+                  <img src={NotificationIcon} alt="noti" />
+                  <img src={ProfileIcon} alt="profile" />
+                </div>
+            </div>
+          <div className="main-screen">
+            <Outlet />
+            <Outlet />
+            <Outlet />
           </div>
+          </main>   
       </div>
+     
+      
       
           
-      <Outlet />
     </>
   );
 };
 
-export default Layout;
+export default SideBar;
