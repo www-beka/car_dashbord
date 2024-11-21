@@ -15,7 +15,7 @@ function App() {
             <Route path="*" element={<NoPage />} />
 
             <Route path="SideBar" element={<SideBar />}>
-
+    
             </Route>
 
         </Routes>
