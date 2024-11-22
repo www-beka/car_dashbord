@@ -9,16 +9,32 @@ svg {
 .dashbord{
     padding: 30px;
     .characteristic-seaction{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 30px;
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+        flex-wrap: wrap;
         .types-of-characteristic{
+            width: 232px;
             height: 266px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: #A162F7;
+            background-color: #333;
+            margin-right: 30px;
+            color:  #fff;
+            border-radius: 14px;
+            span{
+              margin-top: 10px;
+              margin-bottom: 20px;
+              font-size: 20px;
+              font-weight: bold;
+            }
+            position: relative;
+            b{
+              position: absolute;
+              bottom: 70px;
+            }
 
         }
     }
