@@ -1,6 +1,6 @@
 import { Outlet, Link } from "react-router-dom";
 import './SideBar.scss'
-import DashbordIcon from '../../assets/dashboard.svg'
+import DashbordImage from '../../assets/dashboard.svg'
 import AssetsIcon from '../../assets/assets.svg'
 import BookingIcon from '../../assets/car.svg'
 import ShoopingIcon from '../../assets/shopping.svg'
@@ -23,7 +23,7 @@ const SideBar = () => {
                   <div className="logo"><img src={Logo} alt="" /> <span>Motiv.</span></div>
                   <div className="categoris">
                       <div className="categori-items">
-                        <img src={DashbordIcon} alt="Dashbord" />  <span>Dashbord</span>
+                        <img src={DashbordImage} alt="Dashbord" />  <span>Dashbord</span>
                       </div>
                       <div className="categori-items">
                         <img src={AssetsIcon} alt="Assets" />  <span>Assets</span>

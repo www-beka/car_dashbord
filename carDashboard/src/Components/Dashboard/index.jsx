@@ -1,5 +1,4 @@
 import './Dashbord.scss'
-
 const Dashboard = () => {
     return (
       <>

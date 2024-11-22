@@ -5,6 +5,8 @@ import SignUp from "./Components/SignUp";
 import SideBar from "./Components/SideBar";
 import NoPage from "./Components/NoPage"
 import Dashboard from "./Components/Dashboard";
+import Layout from "./Components/Layout"
+
 
 function App() {
   return (
@@ -14,9 +16,9 @@ function App() {
             <Route path="/" element={<SideBar />}>
               <Route index  element={<Dashboard />} />
             </Route>
-              {/* <Route path="Dashboard" element={<Dashboard />} /> */}
             <Route path="SignIn" element={<SignIn />} />
             <Route path="SignUp" element={<SignUp />} />
+            <Route path="Layout" element={<Layout />} />
             <Route path="*" element={<NoPage />} />
 
         </Routes>
