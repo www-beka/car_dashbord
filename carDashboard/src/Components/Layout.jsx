@@ -17,10 +17,12 @@ import MessageIcon from '@mui/icons-material/Message';
 import SettingsIcon from '@mui/icons-material/Settings';
 import Logo from '../assets/logo.svg'
 import Statistics from './Statistics';
+import RecommendScreen from './RecommendScreen';
+
 
 const NAVIGATION = [
   {
-    segment: 'dashboard',
+    segment: 'Layout',
     title: 'Dashboard',
     icon: <DashboardIcon />,
   },
@@ -86,8 +88,15 @@ function DemoPageContent({ pathname }) {
   return (
     <Box sx={{py: 1,}}>
       <Typography >
+        <section>
           <Dashboard />
+        </section>
+        <section>
           <Statistics />
+        </section>
+        <section>
+          <RecommendScreen />
+        </section>
       </Typography>
     </Box>
   );
