@@ -2,7 +2,7 @@ import "./Statistics.scss";
 import * as React from 'react';
 import { BarChart } from '@mui/x-charts/BarChart';
 import { LineChart } from '@mui/x-charts/LineChart';
-
+import Button from './Buttons'
 
 const Statistics = () => {
   return (
@@ -11,11 +11,7 @@ const Statistics = () => {
         <div className="miles-statistics">
           <h2>Miles Statistics</h2>
           <div className="dates">
-            <div>
-                <span>Day</span>
-                <span >Week</span>
-                <span>Month</span>
-            </div>
+            <Button />
             <p>256 Miles</p>
           </div>
           <div className="chart-art">
@@ -35,11 +31,7 @@ const Statistics = () => {
           <h2>Miles Statistics</h2>
           <div className="dates">
             <p>20 February 2022</p>
-            <div>
-                <span>Day</span>
-                <span>Week</span>
-                <span>Month</span>
-            </div>
+            <Button />
           </div>
           <div className="chart-art">
           <LineChart     
