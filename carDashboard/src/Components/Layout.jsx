@@ -16,6 +16,7 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import MessageIcon from '@mui/icons-material/Message';
 import SettingsIcon from '@mui/icons-material/Settings';
 import Logo from '../assets/logo.svg'
+import Statistics from './Statistics';
 
 const NAVIGATION = [
   {
@@ -86,7 +87,7 @@ function DemoPageContent({ pathname }) {
     <Box sx={{py: 1,}}>
       <Typography >
           <Dashboard />
-          
+          <Statistics />
       </Typography>
     </Box>
   );
