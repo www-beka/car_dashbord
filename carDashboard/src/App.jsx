@@ -6,14 +6,15 @@ import SideBar from "./Components/SideBar";
 import NoPage from "./Components/NoPage"
 import Dashboard from "./Components/Dashboard";
 import Layout from "./Components/Layout"
-
+import Assets from "./Components/AssetsPage";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-            <Route path="/" element={<Layout />}>
+            <Route path="/" element={<Layout />} >
+              <Route path="Assets" element={<Assets />} />
             </Route>
             <Route path="SignIn" element={<SignIn />} />
             <Route path="SignUp" element={<SignUp />} />

@@ -18,6 +18,7 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import Logo from '../assets/logo.svg'
 import Statistics from './Statistics';
 import RecommendScreen from './RecommendScreen';
+import Assets from './AssetsPage';
 
 
 const NAVIGATION = [
@@ -27,7 +28,7 @@ const NAVIGATION = [
     icon: <DashboardIcon />,
   },
   {
-    segment: 'AssetsIcon',
+    segment: 'Assets',
     title: 'Assets',
     icon: <AssessmentIcon />,
   },
@@ -96,6 +97,9 @@ function DemoPageContent({ pathname }) {
         </section>
         <section>
           <RecommendScreen />
+        </section>
+        <section>
+          <Assets />
         </section>
       </Typography>
     </Box>
