@@ -1,0 +1,42 @@
+svg {
+  width: 128px;
+  //   transform: rotate(9deg);
+  .progress {
+    transition: stroke-dashoffset 0.3s ease-out;
+    stroke-dashoffset: 175.84 - (175.84 / 100 * 60);
+  }
+}
+.dashbord {
+  padding: 30px;
+  .characteristic-seaction {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    .types-of-characteristic:nth-child(1){
+      background-color: #A162F7;
+      color: #fff;
+    }
+    .types-of-characteristic {
+      width: 232px;
+      height: 266px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+        background-color: #F5F4F6;
+      margin-right: 30px;
+      border-radius: 14px;
+      span {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      b {
+        position: absolute;
+        bottom: 70px;
+      }
+    }
+  }
+}
