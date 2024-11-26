@@ -1,0 +1,40 @@
+.car-Info{
+    width: 361px;
+    height: 675px;
+    background-color: #438FFE;
+    padding: 20px 20px 0 20px;
+    
+    position: relative;
+    .info-top{
+        .info{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;    
+            margin-left: 0;
+            span{
+                font-size: 16px;
+                color: #C6DCFC;
+                display: flex;
+                flex-direction: column;
+            }
+            b{
+                font-size: 20px;
+                color: #fff;
+                font-weight: bolder;
+            }
+            span:nth-child(1){
+                margin-top: 20px;
+            }
+            span:nth-child(2){
+                margin-top: 20px;
+            }
+        }
+    
+    }
+    .info-bottom{
+        img{
+            position: absolute;
+            bottom: -150px;
+        }
+    }
+}
