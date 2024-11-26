@@ -4,7 +4,7 @@ import SignIn from "./Components/SignIn";
 import SignUp from "./Components/SignUp";
 import SideBar from "./Components/SideBar";
 import NoPage from "./Components/NoPage"
-import Dashboard from "./Components/Dashboard";
+import Dashboard from "./Components/DashboardPage/Dashboard";
 import Layout from "./Components/Layout"
 import Assets from "./Components/AssetsPage";
 

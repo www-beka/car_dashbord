@@ -6,7 +6,7 @@ import DashboardIcon from '@mui/icons-material/Dashboard';
 import { createTheme } from '@mui/material/styles';
 import { AppProvider } from '@toolpad/core/AppProvider';
 import { DashboardLayout } from '@toolpad/core/DashboardLayout';
-import Dashboard from './Dashboard';
+// import Dashboard from './DashboardPage/Dashboard';
 import AssessmentIcon from '@mui/icons-material/Assessment';
 import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
 import LocalMallIcon from '@mui/icons-material/LocalMall';
@@ -16,9 +16,10 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import MessageIcon from '@mui/icons-material/Message';
 import SettingsIcon from '@mui/icons-material/Settings';
 import Logo from '../assets/logo.svg'
-import Statistics from './Statistics';
-import RecommendScreen from './RecommendScreen';
+// import Statistics from './DashboardPage/Statistics';
+// import RecommendScreen from './DashboardPage/RecommendScreen';
 import Assets from './AssetsPage';
+import DashboardPage from './DashboardPage';
 
 
 const NAVIGATION = [
@@ -89,15 +90,7 @@ function DemoPageContent({ pathname }) {
   return (
     <Box sx={{py: 1,}}>
       <Typography >
-        <section>
-          <Dashboard />
-        </section>
-        <section>
-          <Statistics />
-        </section>
-        <section>
-          <RecommendScreen />
-        </section>
+        {/* <DashboardPage /> */}
         <section>
           <Assets />
         </section>
