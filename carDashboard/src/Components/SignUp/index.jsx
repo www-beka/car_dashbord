@@ -8,7 +8,7 @@ const SignUP = () => {
             <div className="singUp-main">
                 <div className="signIn-with">
                     <h1>Get’s started.</h1>
-                    <p>Don’t have an account? <span><Link to="/">Sign in</Link></span></p>
+                    <p>Don’t have an account? <span><Link to="/SignIn">Sign in</Link></span></p>
                     <div className="signIn-with-buttons">
                         <button>
                             <img src={Google} alt="" width={20}/> 
@@ -47,7 +47,9 @@ const SignUP = () => {
                         <span>Forgot your password?</span>
                     </div>
                     <div className="signIn-button">
-                        <button><Link to='/SideBar'>Sign in</Link></button>
+                        <Link to='/'>
+                            <button>Sign in</button>
+                        </Link>
                     </div>
             </div>   
         </>

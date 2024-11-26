@@ -37,7 +37,7 @@ const ErrorPage = () => {
         <p>
            <span>SOME PAGES ON THIS SERVER THAT YOU DO HAVE PERMISSION TO ACCESS</span>: [ <Link to='/'>Home</Link> ]
         </p>
-        <p> <span>HAVE A NICE DAY SIR AXLEROD :-)</span></p>
+        <p> <span>HAVE A NICE DAY :-)</span></p>
       </div>
       <a href="/" className="avatar"></a>
     </div>

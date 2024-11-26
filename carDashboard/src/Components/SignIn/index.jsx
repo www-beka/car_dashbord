@@ -43,7 +43,9 @@ const SignIn = () => {
                         <span>Forgot your password?</span>
                     </div>
                     <div className="signIn-button">
-                        <button><Link to='/SideBar'>Sign in</Link></button>
+                        <Link to='/'>
+                             <button>Sign in</button>
+                        </Link>
                     </div>
             </div>   
 
