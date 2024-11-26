@@ -1,5 +1,6 @@
 import './Assets.scss'
 import { Car_Info } from './Car-Info'
+import { CarActivity } from './CarActivity'
 const Assets = () => {
     return(
         <>  
@@ -10,7 +11,7 @@ const Assets = () => {
                     <Car_Info />
                 </div>
                 <div className="assetsRight">
-                    
+                    <CarActivity />
                 </div>
             </div>
         </>
