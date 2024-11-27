@@ -7,7 +7,6 @@ const Assets = () => {
             <div className="assetsPage">
                 <div className="assetsLeft">
                     <h1>Assets</h1>
-
                     <Car_Info />
                 </div>
                 <div className="assetsRight">

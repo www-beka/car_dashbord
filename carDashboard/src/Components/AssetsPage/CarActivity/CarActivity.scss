@@ -1,0 +1,113 @@
+.CarActivity{
+    width: 640px;
+    margin-left: 100px;
+    margin-top: 30px;
+    .allActivity, .noties, .AvailableSensors, .reminder{
+        background-color: #F5F5F5;
+        margin-bottom: 20px;
+        border-radius: 15px;
+    }
+    .allActivity{
+        width: 100%;
+        padding: 25px; 
+        span{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #A4A5A6;
+            font-size: 14px;
+            h4{
+                color: #242731;
+                font-size: 20px;
+            }
+        }
+    }
+    .noties-screen{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        .noties{
+            padding: 15px 20px;
+            .days{
+                display: flex;
+                align-items: center;
+                font-size: 13px;
+                span{
+                    p{
+                        font-size: 11px;
+                        color: #72767C;
+                    }
+                    button{
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                        padding: 4px 10px;
+                        margin-top: 10px;
+                        background-color: #ECEEF0;
+                    }
+                }
+            }
+            .days:nth-child(2){
+                margin-top: 18px;
+                margin-bottom: 18px;
+            }
+        }
+        .AvailableSensors{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+            .AvailableSensors-head{
+                h4{
+                    margin-bottom: 10px;
+                }
+            }
+            span{
+                display: flex;
+                align-items: center;
+                font-size: 13px;
+                input[type="checkbox"]{
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 10px;
+                }
+            }
+            button{
+                border: none;
+                outline: none;
+                background-color: #FF6370;
+                color: #fff;
+                border-radius: 5px;
+                width: 71px;
+                height: 26px;
+            }
+        }
+    }
+    .reminder{
+        padding: 16px 20px;
+        .reminder-head{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            button{
+                border: none;
+                outline: none;
+                background-color: #A162F7;
+                border-radius: 6px;
+                width: 95px;
+                height: 30px;
+                color: #ffff;
+            }
+        }
+        .reminder-table{
+            table{
+                width: 100%;
+                border-collapse: collapse;
+                tr{
+                    height: 50px;
+                    border-top: 1px solid lightgrey;
+                }
+            }
+        }
+    }
+}
