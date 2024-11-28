@@ -15,8 +15,11 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import MessageIcon from '@mui/icons-material/Message';
 import SettingsIcon from '@mui/icons-material/Settings';
 import Logo from '../assets/logo.svg'
+
 import Assets from './AssetsPage';
 import DashboardPage from './DashboardPage';
+import { Booking } from './BookingPage';
+
 
 
 const NAVIGATION = [
@@ -88,9 +91,10 @@ function DemoPageContent({ pathname }) {
     <Box sx={{py: 1,}}>
       <Typography >
         {/* <DashboardPage /> */}
-        <section>
+        {/* <section>
           <Assets />
-        </section>
+        </section> */}
+        <Booking />
       </Typography>
     </Box>
   );
